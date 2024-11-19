@@ -19,6 +19,14 @@ const BlogItem: React.FC = () => {
       title: "Lorem Ipsum has been the industry's standard dummy text...",
       date: "May 12 2024",
     },
+    {
+        id: 2,
+        imageUrl:
+          "https://images.unsplash.com/photo-1634165461820-73bf7738457d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8cGxhbnQlMjBpbWFnZXxlbnwwfHwwfHx8MA%3D%3D",
+        title: "Lorem Ipsum has been the industry's standard dummy text...",
+        date: "May 12 2024",
+    },
+     
     // Add more blog items here
   ];
 
@@ -37,6 +45,7 @@ const BlogItem: React.FC = () => {
               src={blog.imageUrl}
               alt="Blog Image"
               className="w-full h-64 object-cover"
+              
             />
             <div className="absolute bottom-0 px-4 py-4 bg-gradient-to-t from-black via-transparent to-transparent w-full text-white">
               <h3 className="text-lg font-regular mb-2">{blog.title}</h3>

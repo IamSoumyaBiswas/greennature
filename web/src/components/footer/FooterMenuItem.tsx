@@ -8,16 +8,16 @@ interface NavMenuItemInterface {
 }
 
 
-function NavMenuItem({
+function FooterMenuItem({
   link,
   name,
   className,
 }: NavMenuItemInterface) {
   return (
-    <Link href={link} className={cn(`text-md leading-6 text-gray-900 border-0 border-blue-500`, className)} >
+    <Link href={link} className={cn(`text-gray-600 hover:text-gray-900 text-xs border-0 border-blue-500`, className)} >
       {name}
     </Link>
   )
 }
 
-export default NavMenuItem
+export default FooterMenuItem

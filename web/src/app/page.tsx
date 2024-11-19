@@ -1,7 +1,14 @@
-import NavMenu from "@/components/header/NavMenu";
+import React from 'react'
+import SubscribeNews from './_components/SubscribeNews';
+import BlogItem from './_components/BlogItem';
 
-export default function Home() {
+const page = () => {
   return (
-    <NavMenu/>
-  );
+    <div>
+      <BlogItem/>
+      <SubscribeNews/>
+    </div>
+  )
 }
+
+export default page;

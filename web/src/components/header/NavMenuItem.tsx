@@ -3,7 +3,6 @@ import Link from "next/link"
 import { ReactNode } from "react"
 
 interface NavMenuItemInterface {
-
     link: string,
     name: string,
     className?: string,
@@ -13,12 +12,11 @@ interface NavMenuItemInterface {
 
 
 function NavMenuItem({
-
-  link,
-  name,
-  className,
-  hasIcon,
-  icon
+    link,
+    name,
+    className,
+    hasIcon = false,
+    icon
 }: NavMenuItemInterface) {
   return (
     <Link  href={link} className={cn(`flex gap-2 items-center text-md leading-6 text-gray-900 border-0 border-blue-500`, className)} >

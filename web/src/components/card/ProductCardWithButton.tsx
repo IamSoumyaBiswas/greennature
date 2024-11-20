@@ -9,7 +9,8 @@ interface ProductCardWithButtonInterface {
     originalPrice: number,
     currentPrice: number,
     discount: number,
-    review: number
+    review: number,
+    stock:boolean
 }
 
 function ProductCardWithButton({
@@ -43,9 +44,14 @@ function ProductCardWithButton({
         </div>
         <div className="flex items-center mt-1 gap-1  border-none border-blue-500">
             {/* Star */}
+
+        </div>
+
+        <div className=''>
+
         </div>
     </div>
   )
 }
 
-export default ProductCardWithButton
+export default ProductCardWithButton;

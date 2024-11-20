@@ -7,10 +7,11 @@ import Header from '@/components/Header';
 const page = () => {
   return (
     <div>
-      <Header/>
+    
       {/* <HeroImage/> */}
       <BlogItem/>
       <SubscribeNews/>
+
     </div>
   )
 }

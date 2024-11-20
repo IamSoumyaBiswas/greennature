@@ -2,7 +2,7 @@ import NavMenu from './header/NavMenu'
 
 function Header() {
   return (
-    <div className="border-0 border-slate-700 mx-auto max-w-screen-xl container">
+    <div className="border-2 bg-red-800 py-2  border-slate-700 ">
         <NavMenu/>
     </div>
   )

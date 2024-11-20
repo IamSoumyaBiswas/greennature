@@ -51,7 +51,7 @@ function NavMenu() {
     ];
 
     return (
-        <nav className="flex items-center max-w-screen-xl justify-between container mx-auto p-2 lg:py-2  font-marcellus border-0 border-blue-500"
+        <nav className="flex bg-white items-center max-w-screen-xl justify-between container mx-auto p-2 lg:py-2  font-marcellus border-0 border-blue-500"
             aria-label="Global">
                 <Logo link='/' name='GreenNatures' />
 

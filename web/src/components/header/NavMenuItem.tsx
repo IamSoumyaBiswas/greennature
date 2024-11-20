@@ -19,7 +19,7 @@ function NavMenuItem({
     icon
 }: NavMenuItemInterface) {
   return (
-    <Link  href={link} className={cn(`flex gap-2 items-center text-md leading-6 text-gray-900 border-0 border-blue-500`, className)} >
+    <Link  href={link} className={cn(`flex gap-2  items-center text-md leading-6 text-gray-900 border-0 border-blue-500`, className)} >
          {hasIcon && icon && icon} 
          {name}
     </Link>

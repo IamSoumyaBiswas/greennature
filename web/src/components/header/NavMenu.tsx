@@ -1,4 +1,4 @@
-import CartIcon from '@/app/assets/icons/CartIcon';
+import CartIcon from '@/assets/icons/CartIcon';
 import { cn } from '@/libs/utils';
 import NavMenuItem from './NavMenuItem';
 import Logo from '../Logo';
@@ -51,7 +51,7 @@ function NavMenu() {
     ];
 
     return (
-        <nav className="flex items-center max-w-screen-xl justify-between container mx-auto p-2 lg:py-2  font-marcellus border-0 border-blue-500"
+        <nav className="flex items-center max-w-screen-xl justify-between container mx-auto py-2 lg:py-2  font-marcellus border-0 border-blue-500"
             aria-label="Global">
                 <Logo link='/' name='GreenNatures' />
 

@@ -7,7 +7,6 @@ interface NavMenuItemInterface {
   className: string,
 }
 
-
 function FooterMenuItem({
   link,
   name,

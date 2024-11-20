@@ -1,6 +1,5 @@
 import TopRightArrow from '@/assets/icons/TopRightArrow'
 import Image from 'next/image'
-import React from 'react'
 
 interface BlogItemInterface{
     id: string;

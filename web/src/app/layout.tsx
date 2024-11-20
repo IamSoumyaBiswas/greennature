@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+<<<<<<< HEAD
 import { Marcellus } from "next/font/google";
 import "./globals.css";
 
@@ -6,6 +7,16 @@ const marcellus = Marcellus({
   weight: '400',
   style: "normal",
   subsets: ["latin"],
+=======
+import { Marcellus } from "next/font/google"
+import "./globals.css";
+
+const marcellus = Marcellus({
+  weight: "400",
+  style: "normal",
+  subsets: ["latin"],
+  display: "auto",
+>>>>>>> 1801d73f6733141360c319e288dc45ead107c40b
   preload: true,
 })
 

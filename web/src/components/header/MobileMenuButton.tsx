@@ -1,4 +1,4 @@
-import MenuIcon from '@/app/assets/icons/MenuIcon'
+import MenuIcon from '@/assets/icons/MenuIcon'
 import { cn } from '@/libs/utils'
 import React from 'react'
 

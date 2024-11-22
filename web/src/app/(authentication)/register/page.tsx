@@ -1,17 +1,18 @@
+"use client"
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 
 const SignupForm: React.FC = () => {
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-    const formData = new FormData(e.currentTarget);
-    const email = formData.get("email") as string;
-    const password = formData.get("password") as string;
+  // const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+  //   e.preventDefault();
+  //   const formData = new FormData(e.currentTarget);
+  //   const email = formData.get("email") as string;
+  //   const password = formData.get("password") as string;
 
-    // Add your form handling logic here (e.g., API call)
-    console.log({ email, password });
-  };
+  //   // Add your form handling logic here (e.g., API call)
+  //   console.log({ email, password });
+  // };
 
   return (
     <div className="bg-gray-50 font-marcellus flex items-center justify-center min-h-screen">
@@ -29,7 +30,27 @@ const SignupForm: React.FC = () => {
             Join our green community and find the plants that suit your style and lifestyle.
           </p>
           {/* Form */}
-          <form onSubmit={handleSubmit} className="mt-8 w-full max-w-sm flex flex-col gap-4 text-left">
+          <form  className="mt-8 w-full max-w-sm flex flex-col gap-4 text-left">
+            {/* username */}
+            <div>
+              <label
+                htmlFor="username"
+                className="block text-sm font-medium text-gray-700"
+              >
+                Email
+              </label>
+              <input
+                type="text"
+                name="username"
+                id="username"
+                placeholder="Enter your username"
+                className="w-full mt-1 px-4 py-2 rounded-lg bg-slate-100 focus:outline-none focus:ring-2 focus:ring-green-600 text-gray-800 placeholder-gray-400"
+                aria-label="Email"
+                required
+              />
+            </div>
+
+            {/* Email */}
             <div>
               <label
                 htmlFor="email"
@@ -47,7 +68,9 @@ const SignupForm: React.FC = () => {
                 required
               />
             </div>
-            <div>
+
+          {/* Password */}
+          <div>
               <label
                 htmlFor="password"
                 className="block text-sm font-medium text-gray-700"
@@ -64,21 +87,22 @@ const SignupForm: React.FC = () => {
                 required
               />
             </div>
+
             <button
               type="submit"
               className="w-full bg-green-800 text-white font-semibold py-2 rounded-lg mt-4 hover:bg-green-700 transition duration-300"
             >
-              Login
+           Signup
             </button>
           </form>
-          {/* Redirect to Signup */}
+          {/* Redirect to login */}
           <p className="mt-6 text-sm text-gray-600">
-            Don&apos;t have an account?{" "}
+           Already have an account?{" "}
             <Link
-              href="/signup"
+              href="/login"
               className="text-green-800 underline hover:text-green-600 transition duration-300"
             >
-              Signup now
+              Login now
             </Link>
           </p>
         </div>

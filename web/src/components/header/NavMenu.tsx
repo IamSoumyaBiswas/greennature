@@ -95,7 +95,7 @@ function NavMenu() {
     { link: "/products", name: "Products" },
     { link: "/blogs", name: "Blogs" },
     { link: "/contact-us", name: "Contact Us" },
-    { link: "/auth/login", name: "Log In" },
+    { link: "/login", name: "Log In" },
     { link: "/cart", name: "Cart", hasIcon: true, icon: <CartIcon /> },
   ];
 
@@ -109,10 +109,10 @@ function NavMenu() {
 
       {/* Drawer */}
       <MobileMenuDrawer
-    isOpen={isDrawerOpen}
-    onClose={() => setIsDrawerOpen(false)}
-    menu={menu}
-/>
+        isOpen={isDrawerOpen}
+        onClose={() => setIsDrawerOpen(false)}
+        menu={menu}
+      />
 
 
       {/* Desktop Menu */}

@@ -30,7 +30,7 @@ import React from "react";
 import MenuIcon from "@/assets/icons/MenuIcon";
 import { cn } from "@/libs/utils";
 
-function MobileMenuButton({ className = "", onClick }) {
+function MobileMenuButton({ className = "", onClick }:{className?:string,onClick:()=>void}) {
   return (
     <button
       type="button"

@@ -1,7 +1,12 @@
 import Link from "next/link";
 import { cn } from "@/libs/utils";
 
-const MobileMenuDrawer = ({ isOpen, onClose, menu }) => {
+interface MobiledrawerInterface{
+  isOpen:boolean,
+  onClose:()=>void,
+  menu:Array<any>
+}
+const MobileMenuDrawer = ({ isOpen, onClose, menu }:MobiledrawerInterface) => {
   return (
     <div
       className={cn(
@@ -48,7 +53,7 @@ const MobileMenuDrawer = ({ isOpen, onClose, menu }) => {
             <Link
               key={item.link}
               href={item.link}
-              className="block px-3 py-2 text-base font-semibold text-gray-900 hover:bg-gray-50 hover:underline flex items-center"
+              className=" px-3 py-2 text-base font-semibold text-gray-900 hover:bg-gray-50 hover:underline flex items-center"
               onClick={onClose} // Optional: Close the drawer when an item is clicked
             >
               {item.name}

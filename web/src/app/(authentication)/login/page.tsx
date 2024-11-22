@@ -32,6 +32,8 @@ const Login:React.FC = () => {
         </p>
         {/* Form */}
         <form  className="mt-8 w-full max-w-sm flex flex-col gap-4 text-left">
+
+          {/* Email */}
           <div>
             <label
               htmlFor="email"
@@ -49,6 +51,8 @@ const Login:React.FC = () => {
               required
             />
           </div>
+
+          {/* Password */}
           <div>
             <label
               htmlFor="password"
@@ -66,21 +70,23 @@ const Login:React.FC = () => {
               required
             />
           </div>
+
           <button
             type="submit"
             className="w-full bg-green-800 text-white font-semibold py-2 rounded-lg mt-4 hover:bg-green-700 transition duration-300"
           >
             Login
           </button>
+
         </form>
         {/* Redirect to Signup */}
         <p className="mt-6 text-sm text-gray-600">
           Don&apos;t have an account?{" "}
           <Link
-            href="/signup"
+            href="/register"
             className="text-green-800 underline hover:text-green-600 transition duration-300"
           >
-            Signup now
+            register now
           </Link>
         </p>
       </div>

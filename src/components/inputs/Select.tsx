@@ -1,4 +1,5 @@
 "use client"
+import { cn } from "@/libs/utils";
 import { useState, useRef, useEffect } from "react";
 
 interface SelectFieldInterface {
@@ -6,6 +7,7 @@ interface SelectFieldInterface {
   label: string;
   placeHolder: string;
   isDisable: boolean;
+  className: string
 }
 
 export default function Select({
@@ -13,6 +15,7 @@ export default function Select({
   label,
   placeHolder,
   isDisable,
+  className
 }: SelectFieldInterface) {
   const [selectedOption, setSelectedOption] = useState<string>("");
   const [isOpen, setIsOpen] = useState<boolean>(false);
@@ -39,7 +42,7 @@ export default function Select({
   }, []);
 
   return (
-    <div className="relative" ref={dropdownRef}>
+    <div className={cn("relative",className)} ref={dropdownRef}>
       <label className="block text-gray-700 font-medium mb-1">{label}</label>
       <div
         className={`w-full p-3 border rounded-md ${

@@ -1,10 +1,10 @@
+"use client"
 import { useState, useRef, useEffect } from "react";
 
 interface SelectFieldInterface {
   Options: string[];
   label: string;
   placeHolder: string;
-  onChange: (selected: string) => void;
   isDisable: boolean;
 }
 
@@ -12,7 +12,6 @@ export default function Select({
   Options,
   label,
   placeHolder,
-  onChange,
   isDisable,
 }: SelectFieldInterface) {
   const [selectedOption, setSelectedOption] = useState<string>("");
@@ -23,7 +22,6 @@ export default function Select({
     if (!isDisable) {
       setSelectedOption(option);
       setIsOpen(false);
-      onChange(option);
     }
   };
 

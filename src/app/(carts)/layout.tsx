@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Header from "@/components/header/Header";
 import Footer from "@/components/footer/Footer";
+import Breadcrumb from "@/components/BreadCrumb";
 
 
 export const metadata: Metadata = {
@@ -16,6 +17,7 @@ export default function RootLayout({
   return (
     <>
         <Header/>
+        <Breadcrumb />
         {children}
         <Footer/>
     </>

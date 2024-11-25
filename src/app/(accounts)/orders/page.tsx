@@ -43,8 +43,8 @@ function Page() {
     };
 
     return (
-        <div className="flex-1 px-4 py-2 space-y-6">
-            <h1 className="text-3xl font-bold ">Order Details</h1>
+        <div className="w-full bg-white rounded-lg  p-8 space-y-4">
+            <h1 className="text-3xl font-medium ">Order Details</h1>
             <div className="overflow-x-auto">
                 <table className="w-full bg-white rounded-lg border" role="table">
                     <thead className="bg-gray-100">

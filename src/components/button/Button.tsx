@@ -12,7 +12,6 @@ export enum ButtonType {
   OutLine,
 }
 
-<<<<<<< HEAD
 const Button: React.FC<ButtonInterface> = ({
   buttonName,
   fontSize = 'text-sm', // Default value
@@ -27,20 +26,6 @@ const Button: React.FC<ButtonInterface> = ({
           : 'text-white bg-primary border-green-900 text-nowrap lg:w-1/2 w-full '
       }`}
       onClick={onClick}
-=======
-const Button= ({
-  buttonName,
-  fontSize = 'text-sm', // Default value
-  type = ButtonType.Primary, // Default value
-}:ButtonInterface) => {
-  return (
-    <button
-      className={`lg:px-4 md:px-4 px-1 py-1 text-center text-nowrap md:py-2 rounded border-green-900 ${fontSize} ${
-        type === ButtonType.Primary
-          ? 'text-primary text-center border'
-          : 'text-white bg-green-800'
-      }`}
->>>>>>> 1f023cbde3f2c00b9ffe3b3e4f4c0eeaf86cd192
       type="button" // Default HTML button type
       aria-label={buttonName} // For accessibility
     >

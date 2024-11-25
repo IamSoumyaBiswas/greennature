@@ -35,15 +35,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-<<<<<<< HEAD
-        className={`${marcellus.variable} antialiased`}
-      >
-        <Header/>
-        <Breadcrumb/>
-=======
         className={`antialiased`}
       >
->>>>>>> 1f023cbde3f2c00b9ffe3b3e4f4c0eeaf86cd192
         {children}
       </body>
     </html>

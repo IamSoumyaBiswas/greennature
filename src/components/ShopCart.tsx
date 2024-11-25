@@ -17,6 +17,10 @@ const ShopCart = ({
   productOldPrice,
 }: ShopCartInterface) => {
   // Calculate discount percentage dynamically
+    
+      
+
+
   const discountPercentage =
     productOldPrice && productOldPrice > productNewPrice
       ? Math.round(((productOldPrice - productNewPrice) / productOldPrice) * 100)
@@ -28,19 +32,11 @@ const ShopCart = ({
       <div className="relative w-24 h-24 flex-shrink-0">
         <Image
           src={productImage}
-<<<<<<< HEAD
-          layout="fill"
-          objectFit="cover"
-          quality={90}
-          alt={productName}
-          className="rounded-lg"
-=======
           height={200}
           width={200}
           quality={90}
           alt={productName}
           className="rounded-lg object-fill w-full h-full"
->>>>>>> 1f023cbde3f2c00b9ffe3b3e4f4c0eeaf86cd192
         />
       </div>
 
@@ -77,22 +73,12 @@ const ShopCart = ({
         <Button
           buttonName="Remove"
           type={ButtonType.OutLine as ButtonType}
-<<<<<<< HEAD
-          onClick={() => console.log('Remove item clicked')}
-        />
-        <Button
-          buttonName="Add to Wishlist"
-          type={ButtonType.Primary as ButtonType}
-          onClick={() => console.log('Add to Wishlist clicked')}
-        />
-=======
         />
         {/* <Button
           buttonName="Add to Wishlist"
           type={ButtonType.Primary as ButtonType}
           onClick={() => console.log('Add to Wishlist clicked')}
         /> */}
->>>>>>> 1f023cbde3f2c00b9ffe3b3e4f4c0eeaf86cd192
       </div>
     </div>
   );

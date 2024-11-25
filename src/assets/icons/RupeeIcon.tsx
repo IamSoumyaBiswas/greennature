@@ -1,5 +1,3 @@
-import React from 'react';
-
 interface RupeeIconProps {
   color: string;
   size: number; // Size in pixels

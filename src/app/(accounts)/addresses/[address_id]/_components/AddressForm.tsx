@@ -26,10 +26,10 @@ function AddressForm() {
             }} />
 
             {/* <!-- Gender --> */}
-            <Select isDisable={true} Options={["English","Hindi","Bengali","Tamil"]} label="State" placeHolder="Select State"   />
+            <Select isDisable={true} Options={["English","Hindi","Bengali","Tamil"]} label="State" placeHolder="Select State" className=""   />
 
             {/* <!-- Country --> */}
-            <Select isDisable={true} Options={["English","Hindi","Bengali","Tamil"]} label="Country" placeHolder="Select Select"   />
+            <Select isDisable={true} Options={["English","Hindi","Bengali","Tamil"]} label="Country" placeHolder="Select Select" className=""   />
 
         </form>
     )

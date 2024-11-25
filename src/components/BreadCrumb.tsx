@@ -18,7 +18,7 @@ function Breadcrumb() {
 
   return (
     <div className="w-full">
-      <div className="breadcrumb-bg h-12 md:h-16 lg:h-16 flex items-center justify-center">
+      <div className="breadcrumb-bg h-12 md:h-16 lg:h-24 flex items-center justify-center">
         <div className="overlay"></div>
         <div className="relative max-w-screen-xl w-full px-4 breadcrumb-content">
           <nav className="text-white text-sm md:text-xl lg:text-2xl breadcrumb-shadow flex items-center font-marcellus leading-3">

@@ -2,7 +2,6 @@ import RupeeIcon from '@/assets/icons/RupeeIcon';
 import StarIcon from '@/assets/icons/StarIcon';
 import Image from 'next/image';
 import Link from 'next/link';
-import React from 'react';
 
 type ProductCategory = {
   categoryName: string;
@@ -18,7 +17,7 @@ type ProductType = {
   productOldPrice?: number;
   productNewPrice: number;
   productCategory: ProductCategory;
-  rating?: number; // Added rating as optional prop
+  rating?: number; 
   _id: string;
 };
 

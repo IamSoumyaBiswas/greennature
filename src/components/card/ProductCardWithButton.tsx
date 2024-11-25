@@ -3,7 +3,6 @@ import RupeeIcon from '@/assets/icons/RupeeIcon';
 import StarIcon from '@/assets/icons/StarIcon';
 import Image from 'next/image';
 import Link from 'next/link';
-import React from 'react'
 import Button, { ButtonType } from '../button/Button';
 
 
@@ -16,14 +15,13 @@ type ProductCategory = {
 
 type ProductType = {
     productName: string;
-    
     productCardLink: string;
     productImage: string;
     productSlug: string;
     productOldPrice?: number;
     productNewPrice: number;
     productCategory: ProductCategory;
-    rating?: number; // Added rating as optional prop
+    rating?: number;
     _id: string;
 };
 

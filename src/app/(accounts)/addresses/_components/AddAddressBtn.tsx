@@ -1,3 +1,4 @@
+"use client"
 import AddLocationIcon from "@/assets/icons/AddLocationIcon";
 
 function AddAddressBtn({ onClick }: { onClick: () => void }) {

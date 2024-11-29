@@ -15,7 +15,7 @@ function CategoryCard({categoryLink,categoryTitle,categoryImage, categoryDescrip
                 className="w-full py-4 px-4  h-auto rounded-lg  bg-white transform hover:scale-105 transition-transform duration-300">
                 <h2 className="text-sm sm:text-md md:text-md font-medium text-center mb-2">{categoryTitle}</h2>
                 <img src={categoryImage}
-                    alt={categoryDescription} className="w-full h-[100px] rounded-lg bg-red-800 object-cover " />
+                    alt={categoryDescription} className="w-full h-[100px] rounded-md bg-red-800 object-cover " />
             </div>
         </Link>
     )

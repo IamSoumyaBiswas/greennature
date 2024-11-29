@@ -7,7 +7,7 @@ export type LinkType = {
 
 function FooterLink({link,name}: LinkType) {
   return (
-    <Link href={link} className="text-gray-600 hover:text-gray-900 text-xs" > {name} </Link>
+    <Link href={link} className="text-gray-600 hover:text-gray-900 text-sm" > {name} </Link>
   )
 }
 

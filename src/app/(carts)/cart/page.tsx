@@ -1,4 +1,5 @@
 import ShopCart from '@/components/ShopCart'
+import TotalCartPriceBox from '@/components/TotalCartPriceBox'
 import React from 'react'
 
 function page() {
@@ -33,10 +34,13 @@ function page() {
         }
       ]
   return (
-    <div>
+    <div className="flex flex-col lg:flex-row max-w-screen-xl mx-auto p-4 gap-6 my-[48px]">
+        <div className="w-full lg:w-3/4 space-y-4 bg-white p-2">
         {
             shopCartData.map((item,index)=> <ShopCart key={index} productName={item.productName} productImage={item.productImage} productNewPrice={item.productNewPrice} productOldPrice={item.productOldPrice} />)
         }
+        </div>
+        <TotalCartPriceBox total='1230' discount='10' deliveryCharge='40' finalAmmount='1000' saveAmmount='200' />
     </div>
   )
 }

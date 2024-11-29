@@ -83,7 +83,7 @@ function FooterMenu() {
 
 
   return (
-    <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-8 lg:w-3/4  border-0 border-red-500">
+    <div className="grid border-0 border-red-500 grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-8 lg:w-3/4">
       {
         footerMenu.map((item,index)=>(
           <FooterMenuItem key={index} menuName={item.menuName} footerlink={item.links} />

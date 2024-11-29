@@ -1,8 +1,6 @@
 import type { Metadata } from "next";
-
 import Footer from "@/components/footer/Footer";
-import BreadCrumb from "@/components/BreadCrumb";
-import SideBar from "./_components/SideBar";
+import Breadcrumb from "@/components/BreadCrumb";
 import Header from "@/components/Header";
 
 
@@ -19,11 +17,8 @@ export default function RootLayout({
   return (
     <>
         <Header/>
-        <BreadCrumb/>
-        <main className="max-w-screen-xl container mx-auto flex flex-col gap-6 lg:flex-row my-[48px]" >
-            <SideBar/>
-            {children}
-        </main>
+        <Breadcrumb />
+        {children}
         <Footer/>
     </>
   );

@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
-import Breadcrumb from "@/components/Breadcrumb";
 import Header from "@/components/Header";
 import { Marcellus } from "next/font/google"
 // const geistSans = localFont({
@@ -35,7 +34,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`antialiased`}
+        className={`antialiased bg-[#F6F6F6]`}
       >
         {children}
       </body>

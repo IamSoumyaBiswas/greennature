@@ -51,9 +51,9 @@ const ReviewForm: React.FC = () => {
   };
 
   return (
-    <div className="bg-gray-100 flex lg:py-[96px] py-[16px] items-center justify-center">
-      <div className="max-w-screen-xl w-full mx-auto px-12 py-12 bg-white rounded-lg">
-        <h2 className="text-xl font-medium text-gray-800 mb-2">Write a Review</h2>
+    <div className=" flex lg:py-[48px] py-[16px] items-center justify-center font-marcellus ">
+      <div className="max-w-screen-xl w-full mx-auto lg:px-12 md:px-10 px-8 py-12 bg-white rounded-lg">
+        <h2 className="text-xl font-medium font-marcellus text-gray-800 mb-2">Write a Review</h2>
 
         <form onSubmit={handleSubmit}>
           {/* Star Rating Section */}

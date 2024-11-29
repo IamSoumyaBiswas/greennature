@@ -8,6 +8,7 @@ interface ShopCartInterface {
   productImage: string;
   productOldPrice?: number; // Optional for cases where no old price exists
   productNewPrice: number;
+  productDiscount?: number
 }
 
 const ShopCart = ({
@@ -15,10 +16,11 @@ const ShopCart = ({
   productImage,
   productNewPrice,
   productOldPrice,
+  productDiscount,
 }: ShopCartInterface) => {
   // Calculate discount percentage dynamically
-    
-      
+
+
 
 
   const discountPercentage =
@@ -27,60 +29,38 @@ const ShopCart = ({
       : 0;
 
   return (
-    <div className="flex justify-between items-center max-w-screen-lg gap-4 border-b border-gray-200 bg-white p-4 w-full rounded-lg shadow-sm">
-      {/* Product Image */}
-      <div className="relative w-24 h-24 flex-shrink-0">
-        <Image
-          src={productImage}
-          height={200}
-          width={200}
-          quality={90}
-          alt={productName}
-          className="rounded-lg object-fill w-full h-full"
-        />
-      </div>
+    <div
+      className="flex justify-between max-w-screen-lg sm:items-center  gap-4 border-b  border-gray-200 bg-white p-2  w-full ">
+      <Image src={productImage}
+        alt="product_01" width={100} height={100} className=" size-24  rounded object-fit" />
+        <div className="flex-1 space-y-2">
+          {/* <!-- Title with line clamp for two lines --> */}
+          <h1 className="text-base border-0 border-red-600 font-regular mb-1 line-clamp-2">
+            {productName}
+          </h1>
 
-      {/* Product Details */}
-      <div className="flex-1 space-y-2">
-        {/* Product Name */}
-        <h1 className="text-base font-medium text-gray-800 line-clamp-2">
-          {productName}
-        </h1>
 
-        {/* Price Section */}
-        <div className="text-sm text-gray-800">
-          {productOldPrice && (
-            <span className="line-through flex items-center text-gray-400 mr-2">
-              <RupeeIcon color='gray' size={12} />
-              {productOldPrice.toLocaleString()}
-            </span>
-          )}
-          <span className="text-green-600 flex items-center font-bold">
-            <RupeeIcon color='black' size={12} />
-            ₹{productNewPrice.toLocaleString()}
-          </span>
-          {discountPercentage > 0 && (
-            <span className="ml-2 text-sm text-red-500">
-              {discountPercentage}% Off
-            </span>
-          )}
+          {/* <!-- Price and Buttons Section --> */}
+          <div className="flex flex-col border-0 border-blue-600 sm:flex-row justify-between items-start sm:items-end">
+            {/* <!-- Price Section --> */}
+            <div className="text-gray-800  border-0 border-green-600 sm:mb-0">
+              <span className="border-0 text-sm line-through text-gray-400">{productOldPrice && productOldPrice}</span>
+              <span className=" text-sm text-green-600 font-semibold ml-2">{productDiscount && productDiscount}</span>
+              <div className="text-sm text-left  font-bold">{productNewPrice && productNewPrice}</div>
+            </div>
+
+            {/* <!-- Buttons --> */}
+
+
+            <button className="px-4 py-2 text-xs  bg-primary text-white font-regular rounded hover:bg-green-700 transition">
+              Remove
+            </button>
+
+          </div>
+
         </div>
-        
-      </div>
-
-      {/* Action Buttons */}
-      <div className="flex flex-col sm:flex-row gap-2">
-        <Button
-          buttonName="Remove"
-          type={ButtonType.OutLine as ButtonType}
-        />
-        {/* <Button
-          buttonName="Add to Wishlist"
-          type={ButtonType.Primary as ButtonType}
-          onClick={() => console.log('Add to Wishlist clicked')}
-        /> */}
-      </div>
     </div>
+
   );
 };
 

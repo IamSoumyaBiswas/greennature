@@ -1,6 +1,8 @@
 import ProductDescriptionData from '@/app/_components/ProductDescriptionData';
 import ProductDetails from '@/app/_components/ProductDetails';
+import ProductReview from '@/app/_components/ProductReview';
 import ReviewForm from '@/app/_components/ReviewForm';
+import ReviewSection from '@/app/_components/ReviewSection';
 import ProductCartWithoutButton from '@/components/ProductCartWithoutButton';
 import React from 'react'
 
@@ -107,14 +109,22 @@ const page = () => {
   return (
     <div>
       <ProductDetails />
+      
       <ProductDescriptionData description={testData.description} benefits={testData.benefits} moredetails={testData.moredetails} />
+      <ProductReview/>
+      <div className='container mx-auto p-2'>
+        <h1 className='text-2xl font-semibold mb-4'>
+          <ReviewSection/>
+        </h1>
+      </div>
       <ReviewForm />
-      <div className="max-w-screen-xl pb-[48px] lg:my-[0px] md:my-[0px] sm:my-[0px] my-[0px] sm:px-8 md:px-8 lg:px-24 container border-0 px-4 border-orange-700 mx-auto  gap-[16px]   grid grid-cols-2 p-2 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-5 place-items-center">
+      <div className='lg:text-xl text-lg max-w-screen-xl md:px-4 px-4 lg:px-2 font-medium font-marcellus mt-2 mb-4 mx-auto'>Relative Products</div>
+      <div className="max-w-screen-xl pb-[48px]  sm:px-4 md:px-4 lg:px-2 container border-0 px-4 border-orange-700 mx-auto  gap-[16px]   grid grid-cols-2 p-2 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-5 place-items-center">
         {products.map((product) => (
           <ProductCartWithoutButton key={product._id} {...product} />
         ))}
       </div>
-
+ 
 
     </div>
   )

@@ -133,12 +133,12 @@ const products = [
 
 const ProductList = () => {
   return (
-    <div className='flex mx-auto max-w-screen-xl space-x-0 px-2 lg:px-2 lg:space-x-4'>
+    <div className='flex mx-auto max-w-screen-xl py-[48px] space-x-0 px-2 lg:px-2 lg:space-x-4'>
       {/* Filter products */}
       
       <FilterSidebar/>
 
-      <div className='flex flex-col '>
+      <div className='flex flex-col gap-4'>
       <SortFilter/>
       <ProductCard/>
 

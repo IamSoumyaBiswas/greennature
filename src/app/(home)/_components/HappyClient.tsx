@@ -82,7 +82,7 @@ function HappyClient() {
   };
 
   return (
-    <div className="pb-[96px] flex flex-col items-center gap-8 border-0 border-pink-600 justify-center w-full font-marcellus">
+    <div className="pb-[48px] flex flex-col items-center gap-8 border-0 border-pink-600 justify-center w-full font-marcellus">
       <div className="text-center">
         <h2 className="lg:text-2xl md:text-2xl text-md border-0 border-blue-500">Our Happy Clients</h2>
       </div>

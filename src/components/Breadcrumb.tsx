@@ -18,18 +18,18 @@ function Breadcrumb() {
 
   return (
     <div className="w-full">
-      <div className="breadcrumb-bg h-12 md:h-16 lg:h-24 flex items-center justify-center">
+      <div className="breadcrumb-bg h-12 md:h-16 lg:h-20 flex items-center justify-center">
         <div className="overlay"></div>
         <div className="relative max-w-screen-xl w-full px-4 breadcrumb-content">
           <nav className="text-white text-sm md:text-xl lg:text-2xl breadcrumb-shadow flex items-center font-marcellus leading-3">
             {/* Static Home Link */}
-            <Link href="/" className="text-lg">
+            <Link href="/" className="md:text-base text-sm">
               Home
             </Link>
             {routes.map((route, index) => (
               <span key={index} className="mx-1 md:mx-2 flex items-center">
                 <SlashIcon />
-                <Link href={route.href} className="text-lg">
+                <Link href={route.href} className="md:text-base text-sm ">
                   {route.label}
                 </Link>
               </span>

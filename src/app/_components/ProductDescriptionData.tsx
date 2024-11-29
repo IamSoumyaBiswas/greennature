@@ -20,7 +20,7 @@ interface ProductDescriptionProps {
 
 const ProductDescriptionData: React.FC<ProductDescriptionProps> = ({ description, benefits, moredetails }) => {
   return (
-    <div className="bg-white lg:py-[48px] py-[16px] text-black font-marcellus ">
+    <div className="bg-white lg:py-[48px] py-[16px] text-black font-marcellus px-4">
 
       <div className="max-w-screen-xl mx-auto px-2 py-2">
 

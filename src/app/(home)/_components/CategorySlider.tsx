@@ -3,6 +3,7 @@ import LeftArrow from "@/assets/icons/LeftArrow";
 import RightArrow from "@/assets/icons/RightArrow";
 import CategoryCard from "./CategoryCard";
 import { useRef, useState } from "react";
+import Link from "next/link";
 
 function CategorySlider() {
   const cardData = [
@@ -112,10 +113,10 @@ function CategorySlider() {
   };
 
   return (
-    <section className="container mx-auto max-w-screen-xl px-4 pt-12 pb-8">
+    <section className="sm:px-8 md:px-8 lg:px-24 px-4 font-marcellus max-w-screen-xl  lg:py-[48px] md:py-[32px] py-[24px]  container mx-auto w-full flex flex-col  border-0 border-red-600">
       {/* Header Section */}
       <div className="flex justify-between items-center mb-4">
-        <h1 className="text-xl font-semibold">Find Plant Category</h1>
+        <h1 className="lg:text-2xl md:text-xl text-lg font-marcellus font-regular">Find Plant Category</h1>
         <div className="flex gap-2">
           <button
             onClick={() => handleScroll("left")}
@@ -135,9 +136,11 @@ function CategorySlider() {
       </div>
 
       {/* Carousel */}
+
+     {/* <div className="w-full lg:p-0 overflow-hidden lg:py-[24px] py-[0px] border-0  lg:px-0 border-black"> */}
       <div
         ref={carouselRef}
-        className="flex overflow-x-auto scroll-smooth carousel lg:gap-4 md:gap-4 gap-2 p-2 border-0 border-red-500"
+        className="flex overflow-x-auto scroll-smooth carousel lg:gap-4 md:gap-4 gap-2 lg:p-0  lg:py-[24px]  border-0 border-red-500"
         onMouseDown={handleDragStart}
         onMouseMove={handleDragging}
         onMouseUp={handleDragStop}
@@ -156,6 +159,10 @@ function CategorySlider() {
           />
         ))}
       </div>
+      <div className="text-right text-green-700">
+        <Link href={'/'} >View All</Link>
+      </div>
+      {/* </div> */}
     </section>
   );
 }

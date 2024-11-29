@@ -5,10 +5,12 @@ import PopularProducts from './_components/PopularProducts'
 import Suscribe from './_components/Suscribe'
 import BlogList from './_components/BlogList'
 import HappyClient from './_components/HappyClient'
+import Header from '@/components/Header'
 
 function page() {
   return (
     <main>
+      
         <HeroImage />
         <CategorySlider />
         <PopularProducts />

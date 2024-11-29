@@ -128,43 +128,43 @@ import React from 'react'
 const FilterSidebar = () => {
   return (
   
-    <div className="border-2  border-blue-500">
-      <aside className="bg-white lg:p-4 p-2 w-80 border-0 border-gray-800 rounded-lg shadow-lg space-y-6 lg:flex flex-col hidden">
+    <div className="border-0  border-blue-500">
+      <aside className="bg-white lg:p-4 p-2 w-80 h-full border-0 border-gray-800 rounded-lg space-y-4 lg:flex flex-col hidden">
         {/* Filter Sidebar */}
         <div className="flex items-center justify-between ">
           <span className="text-primaryLight text-lg font-marcellus font-bold">
             Filters
           </span>
-          <button className="border-none text-[#475569] rounded-2xl hover:bg-gray-100">
+          <button className="border-none text-[#475569] rounded-2xl hover:text-green-700">
             Clear All
           </button>
         </div>
         {/* Category Filter */}
         <div className="text-sm">
-          <h3 className="font-regular text-md mb-2">Category</h3>
-          <ul className="space-y-2 text-sm">
+          <h3 className="font-regular text-lg mb-4">Category</h3>
+          <ul className="space-y-2 text-xs">
             <li>
-              <input type="checkbox" id="category1" className="mr-2 text-xs" />
+              <input type="checkbox" id="category1" className="mr-2" />
               <label htmlFor="category1">Tropical</label>
             </li>
             <li>
-              <input type="checkbox" id="category2" className="mr-2 text-xs" />
+              <input type="checkbox" id="category2" className="mr-2" />
               <label htmlFor="category2">Herbs</label>
             </li>
             <li>
-              <input type="checkbox" id="category3" className="mr-2 text-xs" />
+              <input type="checkbox" id="category3" className="mr-2" />
               <label htmlFor="category3">Ferns</label>
             </li>
             <li>
-              <input type="checkbox" id="category4" className="mr-2 text-xs" />
+              <input type="checkbox" id="category4" className="mr-2" />
               <label htmlFor="category4">Indoor Plant</label>
             </li>
             <li>
-              <input type="checkbox" id="category5" className="mr-2 text-xs" />
+              <input type="checkbox" id="category5" className="mr-2" />
               <label htmlFor="category5">Outdoor Plant</label>
             </li>
             <li>
-              <a href="#" className="text-blue-500 text-xs">
+              <a href="#" className="text-blue-500">
                 Show more
               </a>
             </li>
@@ -172,35 +172,35 @@ const FilterSidebar = () => {
         </div>
         {/* Ratings Filter */}
         <div>
-          <h3 className=" text-md mb-2">Ratings</h3>
-          <ul className="space-y-2">
+          <h3 className="font-regular text-lg mb-4">Ratings</h3>
+          <ul className="space-y-2 text-xs">
             <li>
               <input type="checkbox" id="rating5" className="mr-2" />
-              <label className="text-sm" htmlFor="rating5">
+              <label className="" htmlFor="rating5">
                 ⭐⭐⭐⭐⭐ &amp; up (1991)
               </label>
             </li>
             <li>
               <input type="checkbox" id="rating4" className="mr-2" />
-              <label className="text-sm" htmlFor="rating4">
+              <label className="" htmlFor="rating4">
                 ⭐⭐⭐⭐ &amp; up (200)
               </label>
             </li>
             <li>
               <input type="checkbox" id="rating3" className="mr-2" />
-              <label className="text-sm" htmlFor="rating3">
+              <label className="" htmlFor="rating3">
                 ⭐⭐⭐ &amp; up (200)
               </label>
             </li>
             <li>
               <input type="checkbox" id="rating2" className="mr-2" />
-              <label className="text-sm" htmlFor="rating2">
+              <label className="" htmlFor="rating2">
                 ⭐⭐ &amp; up (200)
               </label>
             </li>
             <li>
               <input type="checkbox" id="rating1" className="mr-2" />
-              <label className="text-sm" htmlFor="rating1">
+              <label className="" htmlFor="rating1">
                 ⭐ &amp; up (200)
               </label>
             </li>
@@ -208,34 +208,34 @@ const FilterSidebar = () => {
         </div>
         {/* Brand Filter */}
         <div>
-          <h3 className="font-regular text-md mb-4">Brand</h3>
-          <ul className="space-y-2">
+          <h3 className="font-regular text-lg mb-4">Brand</h3>
+          <ul className="space-y-2 text-xs">
             <li>
               <input type="checkbox" id="brand1" className="mr-2" />
-              <label className="text-sm" htmlFor="brand1">
+              <label className="" htmlFor="brand1">
                 Lorem
               </label>
             </li>
             <li>
               <input type="checkbox" id="brand2" className="mr-2" />
-              <label className="text-sm" htmlFor="brand2">
+              <label className="" htmlFor="brand2">
                 Lorem
               </label>
             </li>
             <li>
               <input type="checkbox" id="brand3" className="mr-2" />
-              <label className="text-sm" htmlFor="brand3">
+              <label className="" htmlFor="brand3">
                 Lorem
               </label>
             </li>
             <li>
               <input type="checkbox" id="brand4" className="mr-2" />
-              <label className="text-sm" htmlFor="brand4">
+              <label className="" htmlFor="brand4">
                 Lorem
               </label>
             </li>
             <li>
-              <a href="#" className="text-blue-500 text-sm">
+              <a href="#" className="text-blue-500 ">
                 Show more
               </a>
             </li>
@@ -243,7 +243,7 @@ const FilterSidebar = () => {
         </div>
         {/* Price Filter */}
         <div>
-          <h3 className="font-regular text-lg mb-2">Price</h3>
+          <h3 className="font-regular text-lg mb-4">Price</h3>
           <input
             type="range"
             min={0}
@@ -251,14 +251,14 @@ const FilterSidebar = () => {
             defaultValue={100}
             className="w-full"
           />
-          <div className="flex justify-between text-sm mt-2">
+          <div className="flex justify-between text-xs mt-2">
             <span>₹0</span>
             <span>₹200</span>
           </div>
         </div>
         {/* Size Filter */}
         <div>
-          <h3 className="font-regular text-lg mb-2">Size</h3>
+          <h3 className="font-regular text-lg mb-4">Size</h3>
           <input
             type="range"
             min={5}
@@ -266,7 +266,7 @@ const FilterSidebar = () => {
             defaultValue={7}
             className="w-full"
           />
-          <div className="flex justify-between text-sm mt-2">
+          <div className="flex justify-between text-xs mt-2">
             <span>5</span>
             <span>10</span>
           </div>

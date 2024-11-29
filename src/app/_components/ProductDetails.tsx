@@ -49,7 +49,7 @@ function ProductDetails() {
 
   return (
     <div className="lg:pt-[48px] lg:pb-[48px] py-[16px] bg-[#F6F6F6]">
-      <div className="container mx-auto max-w-screen-xl px-2 py-2 font-marcellus">
+      <div className="container mx-auto max-w-screen-xl px-4 py-2 font-marcellus">
         <div className="product-container flex flex-col lg:flex-row md:flex-row items-center lg:items-start md:items-start gap-4">
           {/* Product Image Container */}
           <div className="product-image w-full lg:w-1/2 md:w-1/2 mb-6 lg:mb-0">
@@ -81,7 +81,7 @@ function ProductDetails() {
             </div>
           </div>
           {/* Product Details */}
-          <div className="product-details w-full lg:w-1/2 md:w-1/2  px-4 py-2 rounded-lg space-y-4">
+          <div className="product-details w-full lg:w-1/2 md:w-1/2  px-2 py-2 rounded-lg space-y-4">
 
             {/* <p className="text-gray-500 text-xs border-0 border-blue-500">
               Sponsored
@@ -91,7 +91,7 @@ function ProductDetails() {
               {ProductData[0].title}
             </h1>
 
-            <p className="text-gray-700 font-regular text-lg ">
+            <p className="text-gray-700 font-regular text-base ">
               {ProductData[0].description}
             </p>
 
@@ -164,7 +164,6 @@ function ProductDetails() {
                 </button>
               </div>
             </div>
-
 
           </div>
         </div>

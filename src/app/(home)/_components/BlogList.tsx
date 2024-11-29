@@ -40,7 +40,7 @@ function BlogList(){
   ];
 
   return (
-    <div className="lg:py-24 md:py-12 py-4 lg:px-0 px-4 max-w-screen-xl space-y-8 border-0 container mx-auto">
+    <div className=" md:py-12 py-4 lg:px-0 px-4 max-w-screen-xl space-y-[48px] border-0 container mx-auto">
       <h1 className="lg:text-2xl md:text-2xl text-xl font-marcellus mb-0">
         Latest Plant News
       </h1>
